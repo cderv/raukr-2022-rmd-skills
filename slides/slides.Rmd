@@ -1063,8 +1063,9 @@ layout: false
 
 .subtitle[Let's sum up!]
 
-## Create content without repeating yourself 
+## Be more powerfull with **knitr**
 
+* .color2[**Include content verbatim**] from text or files
 * .color2[**Import code chunk content**] from a script or from a variable
 * .color2[**Use Rmd child document**] to share content in several places
 * .color2[**Reuse some chunks**] several times
