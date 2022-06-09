@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+# Local Netlify folder
+.netlify
+demo-report*
+demo-recipe-report*
+!demo-recipe-report*.Rmd
+preamble.tex
