@@ -712,6 +712,51 @@ https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html#verbatim
 
 ---
 
+# Using any command-line tools in a chunk
+
+`r new_ribbon()`
+
+.subtitle[About the `exec` engine]
+
+The `exec` engine allows to execute an arbitrary command on the code chunk
+content, optionally with arguments.
+
+</br>
+
+.panelset[
+
+.panel[.panel-name[In your Rmd file]
+
+
+````{verbatim exec-rscript,  lang = "markdown"}
+```{exec, command='Rscript', engine.opts = list(args1 = "--vanilla")}
+1 + 1
+```
+````
+
+]
+
+.panel[.panel-name[after knit in md file]
+````markdown
+```{r, results = "asis", echo = FALSE}
+cat(knitr::knit_child(text = knitr::knit_code$get("exec-rscript"), options = list(message = FALSE), quiet = TRUE), sep = "\n")
+```
+````
+
+]
+]
+
+For details about this new engine, see [`124-exec-engine.Rmd`](https://github.com/yihui/knitr-examples/blob/master/124-exec-engine.Rmd) in [knitr-examples repo](https://github.com/yihui/knitr-examples).
+
+???
+
+The `exec` engine allows to execute an arbitrary command on the code chunk
+content, optionally with arguments. If any, they are passed to `engine.opts` and
+they could be one of the following:
+
+
+---
+
 # How to boost output styling ? 
 
 .center[![:scale 65%, Gif of a man in a suits putting a a pink hat with included sunglasses. Text on the gif says 'You don't like my style', then 'Deal with it'](https://media.giphy.com/media/14o3gppq0mt2Lu/giphy.gif)]
