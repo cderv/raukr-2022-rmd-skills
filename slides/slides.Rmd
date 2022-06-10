@@ -1176,6 +1176,7 @@ layout: false
 * .color2[**Import code chunk content**] from a script or from a variable
 * .color2[**Use Rmd child document**] to share content in several places
 * .color2[**Reuse some chunks**] several times
+* .color2[**Use any CLI tools**] on the code chunk content
 
 ## Customize output style
 
