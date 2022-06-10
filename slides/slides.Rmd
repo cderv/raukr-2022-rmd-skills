@@ -1,6 +1,6 @@
 ---
 title: "Improve your R Markdown Skills"
-author: "Christophe Dervieux"
+author: " Yihui Xie - Christophe Dervieux"
 date: Raukr 2022 - 13/06/2022
 output:
   xaringan::moon_reader:
@@ -44,6 +44,8 @@ new_ribbon <- function() {
 # Who am I ?
 
 .subtitle[Short intro]
+
+## TODO: ADD YIHUI
 
 .center[
 
