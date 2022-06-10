@@ -1257,16 +1257,16 @@ gh_handle_to_link <- function(handle) sprintf("[@%s](https://github.com/%s)", ha
 library(metathis)
 meta() %>%
   meta_general(
-    description = "A presentation at RAUKR2021 about tips and tricks to boost a R Markdown skills.",
+    description = "A presentation at RAUKR2022 about tips and tricks to improve R Markdown skills.",
     generator = "xaringan and remark.js"
   ) %>% 
   meta_social(
-    title = "Boost Your R Markdown Skills",
-    url = "https://raukr-boost-rmd-skills.netlify.app/",
-    image = "https://raukr-boost-rmd-skills.netlify.app/webshot.png",
-    image_alt = "The third slide of the presentation showing what will be discussed in the presenation: rmarkdown package and R Markdown Cookbook recipes.",
+    title = "Improve your R Markdown Skills",
+    url = "https://raukr-2022-rmd-skills.netlify.app/",
+    image = "https://raukr-2022-rmd-skills.netlify.app/webshot.png",
+    image_alt = "The fifth slide of the presentation showing a drawing by Alison Horst that illustrate what happens when it renders with R Markdown. Illustration shows two sorcerers following a recipe to mix text and code and produce nice outputs, using rmarkdown, knitr and Pandoc.",
     og_type = "website",
-    og_author = "Christophde Dervieux",
+    og_author = "Christophe Dervieux and Yihui Xie",
     twitter_card_type = "summary_large_image",
     twitter_creator = "@chrisderv"
   )
