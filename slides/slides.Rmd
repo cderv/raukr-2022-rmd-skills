@@ -680,7 +680,7 @@ Here is the `macros.js` content used for _remark.js_ with this **xaringan** pres
 `````{verbatim, lang = "markdown"}
 Here is the `macros.js` content used for _remark.js_ with this **xaringan** presentation
 
-```{embed, file = "macros.js"}
+*```{embed, file = "macros.js"}
 ```
 `````
 
@@ -693,7 +693,7 @@ Here is the `macros.js` content used for _remark.js_ with this **xaringan** pres
 ````markdown
 Here is the `macros.js` content used for _remark.js_ with this **xaringan** presentation
 
-```js
+*```js
 `r xfun::file_string("macros.js")`
 ```
 ````
