@@ -217,23 +217,25 @@ First thing to focus one: Boost the content of the R Markdown.
 
 .subtitle[About the chunk header syntax `#|`]
 
-As multiline R chunk option
+Using R syntax (`tag = value`, comma-separated, arbitrary wrapping)
 
 ````{verbatim, lang = "markdown"}
 ```{r}
 #| echo = FALSE, fig.width = 10,
 #| fig.cap = "This is a long caption."
+
 plot(cars)
 ```
 ````
 
-As YAML syntax
+Using YAML syntax (`tag: value`; one option per line)
 
 ````{verbatim, lang = "markdown"}
 ```{r}
 #| echo: FALSE
 #| fig.width: 10
 #| fig.cap: "This is a long caption."
+
 plot(cars)
 ```
 ````
