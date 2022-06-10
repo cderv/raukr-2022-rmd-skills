@@ -757,7 +757,7 @@ they could be one of the following:
 
 ---
 
-# How to boost output styling ? 
+# What about styling outputs ? 
 
 .center[![:scale 65%, Gif of a man in a suits putting a a pink hat with included sunglasses. Text on the gif says 'You don't like my style', then 'Deal with it'](https://media.giphy.com/media/14o3gppq0mt2Lu/giphy.gif)]
 
@@ -1242,7 +1242,7 @@ gh_handle_to_link <- function(handle) sprintf("[@%s](https://github.com/%s)", ha
 ```
 
 
-* Emily Riederer and Yihui Xie for the R Markdown Cookbook
+* Emily Riederer, our co-author on the R Markdown Cookbook
 
 * Allison Horst for the illustrations.
 
