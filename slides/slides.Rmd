@@ -1050,7 +1050,7 @@ unlink(o)
 ```{cat, engine.opts = list(lang = "html"), code = content}
 ```
 
-??? 
+???
 
 Allow to style mainly.
 
