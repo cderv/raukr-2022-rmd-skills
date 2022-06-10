@@ -182,6 +182,35 @@ Not sure the aim is to be a rockstar but for sure it is to make those three litt
 First thing to focus one: Boost the content of the R Markdown.
 ---
 
+# Writing long chunk options
+
+`r new_ribbon()`
+
+.subtitle[About the chunk header syntax `#|`]
+
+As multiline R chunk option
+
+````{verbatim, lang = "markdown"}
+```{r}
+#| echo = FALSE, fig.width = 10,
+#| fig.cap = "This is a long caption."
+plot(cars)
+```
+````
+
+As YAML syntax
+
+````{verbatim, lang = "markdown"}
+```{r}
+#| echo: FALSE
+#| fig.width: 10
+#| fig.cap: "This is a long caption."
+plot(cars)
+```
+````
+
+---
+
 # Read external scripts into a chunk
 
 `r new_ribbon()`
