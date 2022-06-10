@@ -1,6 +1,6 @@
 ---
 title: "Improve your R Markdown Skills"
-author: " Yihui Xie - Christophe Dervieux"
+author: "Christophe Dervieux - Yihui Xie"
 date: Raukr 2022 - 13/06/2022
 output:
   xaringan::moon_reader:
@@ -41,11 +41,9 @@ new_ribbon <- function() {
 
 ```
 
-# Who am I ?
+# Who are we?
 
 .subtitle[Short intro]
-
-## TODO: ADD YIHUI
 
 .center[
 
@@ -72,6 +70,37 @@ RStudio &#8226; Software Engineer &#8226; R Markdown Team
 ]
 
 ???
+
+---
+
+# Who are we?
+
+.subtitle[Short intro]
+
+.center[
+
+.profile[![:scale 20%, profile picture for Yihui Xie](https://avatars.githubusercontent.com/u/163582?v=4)]
+
+Yihui XIE &#8226; USA
+
+RStudio &#8226; Software Engineer &#8226; R Markdown Team
+
+]
+</br>
+.pull-left[
+.center[
+.f2.color1[`r fontawesome::fa("github")`]</br>
+[@yihui](https://github.com/yihui)
+]
+]
+
+.pull-right[
+.center[
+.f2.color1[`r fontawesome::fa("twitter")`]</br>
+[@xieyihui](https://twitter.com/xieyihui)
+]
+]
+
 
 ---
 # What are we talking today ? 
