@@ -1282,8 +1282,6 @@ https://rstudio.cloud/project/2654845
 
 ]
 
-]
-
 ???
 
 Special demo file contains part of what we saw but also other recipes from the cookbook.
