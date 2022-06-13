@@ -712,7 +712,7 @@ https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html#verbatim
 
 ---
 
-# Using any command-line tools in a chunk
+# Using any command-line tools in a chunk (1)
 
 `r new_ribbon()`
 
@@ -744,6 +744,7 @@ cat(knitr::knit_child(text = knitr::knit_code$get("exec-rscript"), options = lis
 ````
 
 ]
+
 ]
 
 For details about this new engine, see [`124-exec-engine.Rmd`](https://github.com/yihui/knitr-examples/blob/master/124-exec-engine.Rmd) in [knitr-examples repo](https://github.com/yihui/knitr-examples).
@@ -754,6 +755,66 @@ The `exec` engine allows to execute an arbitrary command on the code chunk
 content, optionally with arguments. If any, they are passed to `engine.opts` and
 they could be one of the following:
 
+---
+
+# Using any command-line tools in a chunk (2)
+
+`r new_ribbon()`
+
+.subtitle[More complexe example using `awk`]
+
+.panelset[
+
+.panel[.panel-name[`marks.txt`]
+
+```{cat, engine.opts = list(file = "marks.txt")}
+1) Amit Physics 80
+2) Rahul Maths 90
+3) Shyam Biology 87
+4) Kedar Maths 85
+5) Hari History 89
+```
+
+```{embed}
+marks.txt
+```
+
+Let's try process this file with `awk` from within our R Markdown document
+
+]
+
+.panel[.panel-name[in Rmd file]
+
+````{verbatim exec-awk,  lang = "markdown"}
+Let's count how many line contains `Maths`
+
+```{exec, command = "awk", engine.opts = list(args1 = "-f", args2 = "marks.txt")}
+/Maths/{++cnt} END {print "Count = ", cnt}
+```
+````
+
+* `args1 = "-f"` needed to exectute the content of the chunk as a awk program
+* `args2` is used to pass the text file to process with the program
+
+]
+
+.panel[.panel-name[after knit in md file]
+
+````markdown
+```{r, results = "asis", echo = FALSE, eval = nzchar(Sys.which("awk"))}
+cat(knitr::knit_child(text = knitr::knit_code$get("exec-awk"), options = list(message = FALSE), quiet = TRUE), sep = "\n")
+```
+````
+
+See [`124-exec-engine.Rmd`](https://github.com/yihui/knitr-examples/blob/master/124-exec-engine.Rmd) in [knitr-examples repo](https://github.com/yihui/knitr-examples) for the different options.
+
+]
+
+]
+
+???
+
+Using some command line tools may require tweaking the `exec` engine arguments
 
 ---
 
