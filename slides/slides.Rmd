@@ -217,7 +217,7 @@ First thing to focus one: Boost the content of the R Markdown.
 
 .subtitle[About the chunk header syntax `#|`]
 
-Using R syntax (`tag = value`, comma-separated, arbitrary wrapping)
+Using R syntax (`tag = value`, comma-separated, arbitrary line-wrapping)
 
 ````{verbatim, lang = "markdown"}
 ```{r}
@@ -228,7 +228,7 @@ plot(cars)
 ```
 ````
 
-Using YAML syntax (`tag: value`; one option per line)
+Using YAML syntax (`tag: value`; one chunk option per line)
 
 ````{verbatim, lang = "markdown"}
 ```{r}
@@ -297,9 +297,9 @@ unlink("my_script.R")
 
 * This will fill the content of the chunk 
 
-* Can be used with any engine
+* Can be used with any engine (R, Python, C++, ...)
 
-* Can be used with multiple script (e.g `file = c("foo.R", "bar.R")`)
+* Can be used with multiple scripts (e.g `file = c("foo.R", "bar.R")`)
 
 ???
 
@@ -309,18 +309,18 @@ Useful for bigger project, or when script already exists.
 
 ---
 
-# Chunk content from variable
+# Construct chunk content from a variable
 
 .subtitle[About the `code` chunk option]
 
-Ex: Installation instruction for packages. 
+Example: Installation instruction for packages. 
 
 ````{verbatim, lang = "markdown"}
 ```{r, include = FALSE}
 pkgs <- c("glue", "fs")
-installation_package <- sprintf('install.packages("%s")', pkgs)
+install_code <- sprintf('install.packages("%s")', pkgs)
 ```
-*```{r, eval = FALSE, code = installation_package}
+*```{r, eval = FALSE, code = install_code}
 ```
 ````
 
