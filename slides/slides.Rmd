@@ -624,7 +624,7 @@ We can output arbitrary content **verbatim**.
 
 The content can contain inline code like
 `r pi * 5^2`, too.
-````
+*````
 `````
 
 ]
@@ -645,7 +645,7 @@ We can output arbitrary content **verbatim**.
 
 The content can contain inline code like
 `r pi * 5^2`, too.
-````
+*````
 `````
 
 ]
@@ -793,7 +793,7 @@ Let's count how many line contains `Maths`
 ```
 ````
 
-* `args1 = "-f"` needed to exectute the content of the chunk as a awk program
+* `args1 = "-f"` needed to execute the content of the chunk as a `awk` program
 * `args2` is used to pass the text file to process with the program
 
 ]
@@ -1259,7 +1259,7 @@ layout: false
 
 ## Look at examples
 
-Xaringan Source + Demo file in </br> .f2.color1[`r fontawesome::fa("github")`] [cderv/raukr-2022-rmd-skills](https://github.com/cderv/raukr-2022-rmd-skills)
+Xaringan Source of this presentation in </br> .f2.color1[`r fontawesome::fa("github")`] [cderv/raukr-2022-rmd-skills](https://github.com/cderv/raukr-2022-rmd-skills)
 </br></br></br>
 
 ```{comment}
@@ -1272,11 +1272,9 @@ https://rstudio.cloud/project/2654845
 
 ]
 
-.pull-right[
+.pull-right.center[
 
 ## More in the book
-
-.center[
 
 ![:scale 40%](https://bookdown.org/yihui/rmarkdown-cookbook/images/cover.png)
 
@@ -1294,8 +1292,6 @@ Special demo file contains part of what we saw but also other recipes from the c
 class: center middle
 
 # Thank you !
-
-.f2.color1[`r fontawesome::fa("github")`]</br>https://github.com/cderv/raukr-2021-rmd-boost
 
 ---
 class: annexe
