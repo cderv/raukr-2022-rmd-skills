@@ -396,14 +396,14 @@ https://bookdown.org/yihui/rmarkdown-cookbook/read-chunk.html
 
 .subtitle[About `child` chunk option]
 
-Load same content in several Rmd document
+Reuse the same content across several Rmd documents:
 
 ````{verbatim, lang = "markdown"}
-```{r common-setup, include = FALSE, child = "_common.Rmd"}
+```{r common-setup, child = "_common.Rmd"}
 ```
 ````
 
-Conditionally include a content
+Conditionally include some content:
 
 ````{verbatim, lang = "markdown"}
 Change `BOSS_MODE` to `TRUE` if this report is to be read
