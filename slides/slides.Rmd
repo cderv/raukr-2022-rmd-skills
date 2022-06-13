@@ -399,15 +399,15 @@ https://bookdown.org/yihui/rmarkdown-cookbook/read-chunk.html
 Reuse the same content across several Rmd documents:
 
 ````{verbatim, lang = "markdown"}
-```{r common-setup, child = "_common.Rmd"}
+```{r child = "_common.Rmd"}
 ```
 ````
+.small[Also used often with `include = FALSE` to load common setup content as setup chunk in several documents.]
 
 Conditionally include some content:
 
 ````{verbatim, lang = "markdown"}
-Change `BOSS_MODE` to `TRUE` if this report is to be read
-by the boss:
+Change `BOSS_MODE` to `TRUE` if this report is to be read by the boss:
 
 ```{r, include=FALSE}
 # variable impacting the rendering, which could be a parameter of a report
@@ -416,7 +416,7 @@ by the boss:
 
 Conditionally include the appendix:
 
-*```{r, child=if (!BOSS_MODE) 'appendix.Rmd'}
+*```{r, child = if (!BOSS_MODE) 'appendix.Rmd'}
 ```
 ````
 
@@ -811,6 +811,11 @@ See [`124-exec-engine.Rmd`](https://github.com/yihui/knitr-examples/blob/master/
 ]
 
 ]
+
+```{r, include = FALSE}
+unlink("marks.txt")
+```
+
 
 ???
 
